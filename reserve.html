@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>Formulario de Reserva</legend>
+
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </p>
+                <p>
+                    <label for="date">Fecha:</label>
+                    <input type="date" name="date" id="date" required>
+                </p>
+                <p>
+                    <label for="tipe-bicicleta">Tipo de Bicicleta:</label>
+                    <select name="tipe-bicicleta" id="tipe-bicicleta" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="montaña">Montaña</option>
+                        <option value="carretera">Carretera</option>
+                        <option value="eléctrica">Eléctrica</option>
+                    </select>
+                </p>
+
+            </fieldset>
+
+            <p>
+                <button type="submit">Reservar</button>
+            </p>
+
+        </form>
+    </main>
+
+    <a href="index.html">Volver al inicio</a>
+
+</body>
+</html>
