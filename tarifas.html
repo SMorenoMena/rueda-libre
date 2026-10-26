@@ -1,85 +1,153 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consulta las tarifas de bicicletas y recorridos guiados de Rueda Libre.">
+    <title>Tarifas | Rueda Libre</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
-     
-    <title>Tarifas</title>
 </head>
 <body>
-    <img src="https://www.elespectador.com/wp-content/uploads/2026/09/DSC0205-1.jpg" alt="logo.png" width="300">
-    <br>
-    <a href="/index.html">Volver a la página principal</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">RL</span>
+                <span class="brand-name">Rueda Libre</span>
+            </a>
 
-    <h1>Nuestras Tarifas</h1>
+            <nav aria-label="Navegación principal">
+                <ul id="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a class="activo" href="tarifas.html" aria-current="page">Tarifas</a></li>
+                    <li><a href="reserve.html">Reservar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    
-    <table class="table-container">
-        <thead>
-            <tr>
-                <th scope="col">Tipo de bicicleta</th>
-                <th scope="col">Duración</th>
-                <th scope="col">Precio</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Carretera</td>
-                <td>por hora</td>
-                <td>2000</td>
-            </tr>
-            <tr>
-                <td>de montaña</td>
-                <td>por jornada</td>
-                <td>3000</td>
-            </tr>
-            <tr>
-                <td>eléctrica</td>
-                <td>por día</td>
-                <td>5000</td>
-        </tbody>
-    </table>
+    <main class="container page-main">
+        <section class="section-container">
+            <h1>Nuestras tarifas</h1>
+            <p>Elige la bicicleta o el recorrido que mejor se adapte a tus planes.</p>
+        </section>
 
+        <section class="pricing-section">
+            <div class="table-heading">
+                <div>
+                    <h2>Tarifas de bicicletas</h2>
+                </div>
+                <p>Opciones para distintas formas de explorar la ciudad.</p>
+            </div>
 
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tipo de bicicleta</th>
+                            <th scope="col">Duración</th>
+                            <th scope="col">Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Carretera</td>
+                            <td>Por hora</td>
+                            <td>2000</td>
+                        </tr>
+                        <tr>
+                            <td>De montaña</td>
+                            <td>Por jornada</td>
+                            <td>3000</td>
+                        </tr>
+                        <tr>
+                            <td>Eléctrica</td>
+                            <td>Por día</td>
+                            <td>5000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-    <h2>REcorridos guiados </h2>
+        <section class="pricing-section">
+            <div class="table-heading">
+                <div>
+                
+                    <h2>Recorridos guiados</h2>
+                </div>
+                <p>Conoce la ciudad desde otra perspectiva.</p>
+            </div>
 
-    <table class="table-container">
-        <thead>
-            <tr>
-                <th scope="col">Recorrido</th>
-                <th scope="col">Distancia</th>
-                <th scope="col">Duración</th>
-                <th scope="col">Nivel</th>
-                <th scope="col">Precio</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Rio y Parques</td>
-                <td>15Km</td>
-                <td>2 horas</td>
-                <td>Intermedio</td>
-                <td>2500</td>
-            </tr>
-            <tr>
-                <td>sabores licoreras</td>
-                <td>20Km</td>
-                <td>3 horas</td>
-                <td>Avanzado</td>
-                <td>4000</td>
-            </tr>
-            <tr>
-                <td>Estadio</td>
-                <td>12Km</td>
-                <td>1 hora</td>
-                <td>Avanzado</td>
-                <td>6000</td>
-            </tr>
-        </tbody>
-    </table>
-    
-    
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Recorrido</th>
+                            <th scope="col">Distancia</th>
+                            <th scope="col">Duración</th>
+                            <th scope="col">Nivel</th>
+                            <th scope="col">Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Río y parques</td>
+                            <td>15 km</td>
+                            <td>2 horas</td>
+                            <td><span class="level-tag">Intermedio</span></td>
+                            <td>2500</td>
+                        </tr>
+                        <tr>
+                            <td>Sabores licoreras</td>
+                            <td>20 km</td>
+                            <td>3 horas</td>
+                            <td><span class="level-tag">Avanzado</span></td>
+                            <td>4000</td>
+                        </tr>
+                        <tr>
+                            <td>Estadio</td>
+                            <td>12 km</td>
+                            <td>1 hora</td>
+                            <td><span class="level-tag">Avanzado</span></td>
+                            <td>6000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </section>
+
+        <section class="booking-cta">
+            <div>
+                <p>¿Listo para salir?</p>
+                <h2>Tu próximo recorrido empieza aquí.</h2>
+            </div>
+            <a class="btn btn-light" href="reserve.html">Reservar ahora</a>
+        </section>
+    </main>
+
+    <a class="whatsapp-float"
+       href="https://wa.me/573000000000"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Contactar a Rueda Libre por WhatsApp">
+        WhatsApp ↗
+    </a>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a class="brand brand-footer" href="index.html">
+                <span class="brand-mark">RL</span>
+                <span class="brand-name">Rueda Libre</span>
+            </a>
+            <p>Muévete mejor. Descubre más.</p>
+            <small>© 2026 Rueda Libre</small>
+        </div>
+    </footer>
 </body>
 </html>

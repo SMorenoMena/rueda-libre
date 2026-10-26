@@ -1,48 +1,115 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Reserva una bicicleta con Rueda Libre en Medellín.">
+    <title>Reservar | Rueda Libre</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <main>
-        <form action="">
-            <fieldset>
-                <legend>Formulario de Reserva</legend>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">RL</span>
+                <span class="brand-name">Rueda Libre</span>
+            </a>
 
-                <p>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" required>
-                </p>
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" required>
-                </p>
-                <p>
-                    <label for="date">Fecha:</label>
-                    <input type="date" name="date" id="date" required>
-                </p>
-                <p>
-                    <label for="tipe-bicicleta">Tipo de Bicicleta:</label>
-                    <select name="tipe-bicicleta" id="tipe-bicicleta" required>
-                        <option value="">Seleccione una opción</option>
-                        <option value="montaña">Montaña</option>
-                        <option value="carretera">Carretera</option>
-                        <option value="eléctrica">Eléctrica</option>
-                    </select>
-                </p>
+            <nav aria-label="Navegación principal">
+                <ul id="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="tarifas.html">Tarifas</a></li>
+                    <li><a class="activo" href="reserve.html" aria-current="page">Reservar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-            </fieldset>
+    <main class="container page-main">
+        <section class="page-intro">
+            <h1>Reserva tu bicicleta</h1>
+            <p>Cuéntanos cuándo quieres salir y qué tipo de bicicleta necesitas.</p>
+        </section>
 
-            <p>
-                <button type="submit">Reservar</button>
-            </p>
+        <section class="reservation-layout">
+            <div class="reservation-aside">
+                <div class="page-intro">
+                    <h2>Tu ruta, a tu manera.</h2>
+                    <p>
+                        Completa tus datos y selecciona el tipo de bicicleta para preparar tu recorrido.
+                    </p>
+                </div>
 
-        </form>
+                <ul class="reservation-benefits">
+                    <li><span>✓</span> Opciones para distintos recorridos</li>
+                    <li><span>✓</span> Casco y candado incluidos</li>
+                    <li><span>✓</span> Una forma sostenible de explorar</li>
+                </ul>
+            </div>
+
+            <div class="form-panel">
+                <form action="#" method="get">
+                    <fieldset>
+                        <legend>Datos de la reserva</legend>
+
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input
+                                type="text"name="nombre"id="nombre"autocomplete="name"placeholder="Escribe tu nombre"required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input
+                                type="email"name="email"id="email"placeholder="nombre@correo.com"required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Fecha de reserva</label>
+                            <input type="date" name="date" id="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tipe-bicicleta">Tipo de bicicleta</label>
+                            <select name="tipe-bicicleta" id="tipe-bicicleta" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="montaña">Montaña</option>
+                                <option value="carretera">Carretera</option>
+                                <option value="eléctrica">Eléctrica</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <button class="btn " type="submit">
+                        Solicitar reserva
+                    </button>
+
+                </form>
+            </div>
+        </section>
     </main>
 
-    <a href="index.html">Volver al inicio</a>
+    <a class="whatsapp-float"
+       href="https://wa.me/573000000000"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Contactar a Rueda Libre por WhatsApp">
+        WhatsApp ↗
+    </a>
 
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a class="brand brand-footer" href="index.html">
+                <span class="brand-mark">RL</span>
+                <span class="brand-name">Rueda Libre</span>
+            </a>
+            <p>Muévete mejor. Descubre más.</p>
+            <small>© 2026 Rueda Libre</small>
+        </div>
+    </footer>
 </body>
 </html>

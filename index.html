@@ -1,76 +1,196 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alquila bicicletas y descubre Medellín con Rueda Libre.">
+    <title>Rueda Libre | Inicio</title>
 
-    <title>Rueda libre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
 </head>
-<p>
-    <img src="https://www.elespectador.com/wp-content/uploads/2026/09/DSC0205-1.jpg" alt="logo.png" width="600">
-    <h1>Rueda libre</h1>
-<p>¡Bienvenidos! somos tu mejor opcion para alquilar bicicletas en la ciudad</p>
-<p>Explora la ciudad de forma sostenible, saludable y economica con nosotros.</p>
-<h2>¿Quienes somos?</h2>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">RL</span>
+                <span class="brand-name">Rueda Libre</span>
+            </a>
 
-<p>Somos una empresa comprometida con la movilidad sostenible en Medellin. Creemosque recorrer
-   la ciudad en bicicletaes la mejor forma de conocerla, cuidar el medio ambiente y mejorar tu salud.
-   Nuestro equipo trabaja cada dia para ofrecerte un servicio seguro, ecomnomico y de calidad </p>
+            <nav aria-label="Navegación principal">
+                <ul id="menu">
+                    <li><a class="activo" href="index.html" aria-current="page">Inicio</a></li>
+                    <li><a href="tarifas.html">Tarifas</a></li>
+                    <li><a href="reserve.html">Reservar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-   <p> <a href="#encuentranos">¿Donde estamos? </a>Encuentranos facilmente y ven a visitarnos</p>
+    <main>
+        <section class="hero container">
+            <div class="hero-copy">
+              
+                <h1>Medellín se disfruta mejor en bicicleta.</h1>
+                <p class="hero-description">
+                    Explora la ciudad de forma sostenible, saludable y económica.
+                    Nosotros ponemos la bicicleta; tú eliges el camino.
+                </p>
 
-   <h2>Nuestros servicios</h2>
-   <h3>Alquiler de bicicletas</h3>
-   <p>Disponemos de bicicletaspara todos los tipos de recorrid:
-    Urbana, de montaña y electricas.
-    <strong> Incluye casco y candado</strong> para tu seguridad. Eligela duracion que necesites:
-    por horas, por medio dia o por jornada completa</p>
+                <p class="hero-note">
+                    <span class="note-dot"></span>
+                    Bicicletas para descubrir la ciudad con tranquilidad.
+                </p>
+            </div>
 
-    <h3>Taller basico de bicicletas</h3>
-    <p>Aprende a cuidar tu biciletacon nosotros. Te enseñamos a cambiar una llanta, ajutsar los frenos y mantenerla en perfectoestado.
-        Talleres practicos para todos los niveles</p>
+            <div class="hero-visual">
+                <img
+                    src="https://www.elespectador.com/wp-content/uploads/2026/09/DSC0205-1.jpg"
+                    alt="Bicicletas listas para recorrer Medellín">
+               
+            </div>
+        </section>
 
-        <h3>Recorridos guiados</h3>
-        
-        <p>Unete a nuestras rutas diseñadas por expertos locales. Conoceras los rincones mas bonitos de Medellin mientras aprendes sobre su historiay cultura
-            ¡Una experiencia unica!</p>
-            
-            <p> <a href="tarifas.html"> Ver recorridos </a> </p>
+        <section class="section-container" id="nosotros">
+            <div class="section-heading">
+              
+                <h2>Una forma más cercana de conocer la ciudad</h2>
+                <p>
+                    Somos un servicio comprometido con la movilidad sostenible
+                    en Medellín. Queremos que recorras sus calles y parques
+                    de manera segura y memorable.
+                </p>
+            </div>
 
-            <h2>¿Como alquilar?</h2>
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon">01</div>
+                    <h3>Alquiler de bicicletas</h3>
+                    <p>
+                        Elige una bicicleta de carretera, de montaña o eléctrica.
+                        Incluye casco y candado para tu recorrido.
+                    </p>
+                    <a class="card-link" href="tarifas.html">Ver tarifas →</a>
+                </article>
 
-            <p>Sigue estos sencillos pasos y estaras listo para rodar por la ciudad</p>
+                <article class="service-card">
+                    <div class="service-icon">02</div>
+                    <h3>Taller básico</h3>
+                    <p>
+                        Aprende a cambiar una llanta, ajustar los frenos
+                        y cuidar tu bicicleta con consejos prácticos.
+                    </p>
+                    <a class="card-link" href="reserve.html">Consultar →</a>
+                </article>
 
-            <ol>
-                <li>Elige el tipo de bicicleta y el tiempo de uso que necesitas</li>
-                <li>Realiza el pago de forma segura en nuestro punto o por transferencia</li>
-                <li>Recibe tu bicileta con el equipo de proteccion y ¡disfruta de tu recorrido!</li>   
+                <article class="service-card service-card--bikes">
+                    <span class="badge-new">Nuevo</span>
+                    <div class="service-icon">03</div>
+                    <h3>Bicicletas eléctricas</h3>
+                    <p>
+                        Descubre una manera cómoda de recorrer más lugares
+                        y disfrutar el camino a tu propio ritmo.
+                    </p>
+                    <a class="card-link" href="reserve.html">Reservar bicicleta →</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="route-banner">
+            <div class="container route-banner-inner">
+                <div>
+                  
+                    <h2>La ciudad tiene mucho por mostrarte.</h2>
+                    <p>
+                        Conoce nuestros recorridos guiados y descubre
+                        nuevos lugares sobre dos ruedas.
+                    </p>
+                </div>
+              
+            </div>
+        </section>
+
+        <section class="section-container">
+            <div class="section-heading">
+                
+                <h2>¿Cómo alquilar?</h2>
+            </div>
+
+            <ol class="steps-list">
+                <li>
+                  
+                    <div>
+                        <h3>Elige tu bicicleta</h3>
+                        <p>Selecciona el tipo de bicicleta y el tiempo de uso.</p>
+                    </div>
+                </li>
+                <li>
+                   
+                    <div>
+                        <h3>Realiza tu reserva</h3>
+                        <p>Completa el formulario con tus datos y la fecha deseada.</p>
+                    </div>
+                </li>
+                <li>
+                    
+                    <div>
+                        <h3>Disfruta el recorrido</h3>
+                        <p>Recibe tu bicicleta y sal a explorar la ciudad.</p>
+                    </div>
+                </li>
             </ol>
-                  <p> <a href="reserve.html"> Hacer una reserva </a> </p>
+        </section>
 
-            <h3>Beneficios para alquilar con nostros.</h3>
+        <section class="visit-section" id="encuentranos">
+            <div class="container visit-inner">
+                <div>
+                    
+                    <h2>Nos vemos en el camino.</h2>
+                    <p>
+                        Consulta nuestra ubicación o escríbenos para resolver
+                        tus dudas antes de reservar.
+                    </p>
+                    <a class="text-link"
+                       href="https://www.google.com/maps/place/Riwi/@6.2191063,-75.5861952,17z/"
+                       target="_blank" rel="noopener noreferrer">
+                        Ver ubicación en el mapa ↗
+                    </a>
+                   
+                </div>
 
-            <ul>
-                <li>Seguro incluido en todos nuestros alquileres</li>
-                <li>Tarifas fexibles sin costos ocultos</li>
-                <li>Asistencia mecanica durante todo tu recorrido</li>
-            </ul>
-      
+                <div class="visit-image">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaGvsty05oqcFZvGg3dB0fVi8a_C2X98hS7H6EXMH8A&s"
+                        alt="Ruta para disfrutar en bicicleta">
+                </div>
+                 <p class="contact-line">
+                        Correo:
+                        <a href="mailto:ruedalibrem@gmail.com">ruedalibrem@gmail.com</a>
+                    </p>
+            </div>
+        </section>
+    </main>
 
-            <p><a href="tarifas.html"> Ver nuestras tarifas</a> </p>
+    <a class="whatsapp-float"
+       href="https://wa.me/573000000000"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Contactar a Rueda Libre por WhatsApp">
+        WhatsApp ↗
+    </a>
 
-           
-           
-
-            <h2 id="encuentranos">Encuentranos</h2>
-            
-            <img src="https://www.elespectador.com/wp-content/uploads/2026/09/DSC0205-1.jpg" alt="Nuestras bicicletas listas para ti" width="200">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaGvsty05oqcFZvGg3dB0fVi8a_C2X98hS7H6EXMH8A&s" alt="Rutas seguras" width="300">
-            <p> <a href="https://www.google.com/maps/place/Riwi/@6.2191063,-75.5861952,17z/data=!3m1!4b1!4m6!3m5!1s0x8e44293f0e114eef:0x99610cdd44c7c081!8m2!3d6.219101!4d-75.5836149!16s%2Fg%2F11l2x8f5ch?entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D"  target="_blank">Visitanos en nuestra ubicacion</a></p>
-            
-            <p>Escribenos a: <a href="ruedalibrem@gmail.com">ruedalibrem@gmail.com</a></p>
-
-            
-
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a class="brand brand-footer" href="index.html">
+                <span class="brand-mark">RL</span>
+                <span class="brand-name">Rueda Libre</span>
+            </a>
+            <p>Muévete mejor. Descubre más.</p>
+            <small>© 2026 Rueda Libre</small>
+        </div>
+    </footer>
 </body>
 </html>
