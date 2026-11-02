@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reserva una bicicleta con Rueda Libre en Medellín.">
+    <title>Reservar | Rueda Libre</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark site-header" aria-label="Navegación principal">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+                    <span class="badge bg-acento text-dark">RL</span>
+                    <span>Rueda Libre</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tarifas.html">Tarifas</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="reserve.html" aria-current="page">Reservar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-4">
+        <section class="mb-4">
+            <h1>Reserva tu bicicleta</h1>
+            <p>Cuéntanos cuándo quieres salir y qué tipo de bicicleta necesitas.</p>
+        </section>
+
+        <section class="row g-4">
+            <div class="col-12 col-lg-6">
+                <h2 class="h3">Tu ruta, a tu manera.</h2>
+                <p>Completa tus datos y selecciona el tipo de bicicleta para preparar tu recorrido.</p>
+
+                <ul class="list-unstyled">
+                    <li class="mb-2"><span class="text-success fw-bold me-2">✓</span>Opciones para distintos recorridos</li>
+                    <li class="mb-2"><span class="text-success fw-bold me-2">✓</span>Casco y candado incluidos</li>
+                    <li class="mb-2"><span class="text-success fw-bold me-2">✓</span>Una forma sostenible de explorar</li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <div class="bg-white border rounded-3 p-4">
+                    <form action="#" method="get">
+                        <fieldset>
+                            <legend class="h5 text-principal mb-3">Datos de la reserva</legend>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold" for="nombre">Nombre completo</label>
+                                <input class="form-control" type="text" name="nombre" id="nombre" autocomplete="name" placeholder="Escribe tu nombre" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold" for="email">Correo electrónico</label>
+                                <input class="form-control" type="email" name="email" id="email" placeholder="nombre@correo.com" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold" for="date">Fecha de reserva</label>
+                                <input class="form-control" type="date" name="date" id="date" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold" for="tipo-bicicleta">Tipo de bicicleta</label>
+                                <select class="form-select" name="tipo-bicicleta" id="tipo-bicicleta" required>
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="montaña">Montaña</option>
+                                    <option value="carretera">Carretera</option>
+                                    <option value="eléctrica">Eléctrica</option>
+                                </select>
+                            </div>
+                        </fieldset>
+
+                        <button class="btn btn-principal d-block mx-auto px-4 mt-3" type="submit">
+                            Solicitar reserva
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a class="btn btn-whatsapp position-fixed bottom-0 end-0 m-3 rounded-pill z-3"
+       href="https://wa.me/573000000000"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Contactar a Rueda Libre por WhatsApp">
+        WhatsApp ↗
+    </a>
+
+    <footer class="bg-principal text-white text-center py-4 mt-5">
+        <div class="container">
+            <a class="d-inline-flex align-items-center gap-2 fw-bold text-white mb-2" href="index.html">
+                <span class="badge bg-acento text-dark">RL</span>
+                <span>Rueda Libre</span>
+            </a>
+            <p class="mb-1">Muévete mejor. Descubre más.</p>
+            <small>© 2026 Rueda Libre</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+/* ===== Variables de colores ===== */
+:root {
+    --color-principal: #214b3b;
+    --color-principal-oscuro: #17372c;
+    --color-acento: #d9b978;
+    --color-texto: #28342d;
+    --color-fondo: #f7f4ec;
+    --color-whatsapp: #25a244;
+    --color-whatsapp-oscuro: #187c32;
+}
+
+/* ===== Base: fuentes y colores propios ===== */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ===== Utilidades con nuestros colores (Bootstrap no los trae) ===== */
+.bg-principal { background-color: var(--color-principal) !important; }
+.text-principal { color: var(--color-principal) !important; }
+.bg-acento { background-color: var(--color-acento) !important; }
+
+/* ===== Navbar: colores de los enlaces ===== */
+.site-header {
+    --bs-navbar-color: rgba(255, 255, 255, 0.85);
+    --bs-navbar-hover-color: var(--color-acento);
+    --bs-navbar-active-color: var(--color-acento);
+    background-color: var(--color-principal);
+}
+
+/* ===== Tabla: encabezado verde ===== */
+.table-principal {
+    --bs-table-bg: var(--color-principal);
+    --bs-table-color: #ffffff;
+    --bs-table-border-color: var(--color-principal-oscuro);
+}
+
+/* ===== Botón propio: se usa junto a "btn" de Bootstrap ===== */
+.btn-principal {
+    --bs-btn-color: #ffffff;
+    --bs-btn-bg: var(--color-principal-oscuro);
+    --bs-btn-border-color: var(--color-principal-oscuro);
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: var(--color-principal);
+    --bs-btn-hover-border-color: var(--color-principal);
+    --bs-btn-active-color: #ffffff;
+    --bs-btn-active-bg: var(--color-principal);
+    --bs-btn-active-border-color: var(--color-principal);
+}
+
+/* ===== Botón de WhatsApp (flotante) ===== */
+.btn-whatsapp {
+    --bs-btn-color: #ffffff;
+    --bs-btn-bg: var(--color-whatsapp);
+    --bs-btn-border-color: var(--color-whatsapp);
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: var(--color-whatsapp-oscuro);
+    --bs-btn-hover-border-color: var(--color-whatsapp-oscuro);
+}
+
+/* ===== Formulario: foco con color de acento ===== */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--color-acento);
+    box-shadow: 0 0 0 0.2rem rgba(217, 185, 120, 0.4);
+}
