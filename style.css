@@ -1,4 +1,4 @@
-/* ===== Variables de colores ===== */
+
 :root {
     --color-principal: #214b3b;
     --color-principal-oscuro: #17372c;
@@ -9,7 +9,7 @@
     --color-whatsapp-oscuro: #187c32;
 }
 
-/* ===== Base: fuentes y colores propios ===== */
+
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: var(--color-fondo);
@@ -24,12 +24,12 @@ a {
     text-decoration: none;
 }
 
-/* ===== Utilidades con nuestros colores (Bootstrap no los trae) ===== */
+
 .bg-principal { background-color: var(--color-principal) !important; }
 .text-principal { color: var(--color-principal) !important; }
 .bg-acento { background-color: var(--color-acento) !important; }
 
-/* ===== Navbar: colores de los enlaces ===== */
+
 .site-header {
     --bs-navbar-color: rgba(255, 255, 255, 0.85);
     --bs-navbar-hover-color: var(--color-acento);
@@ -72,4 +72,29 @@ a {
 .form-select:focus {
     border-color: var(--color-acento);
     box-shadow: 0 0 0 0.2rem rgba(217, 185, 120, 0.4);
+}
+/* ===== Carrusel de bicicletas ===== */
+.bici-img {
+    width: 100%;
+    height: 100%;
+    min-height: 260px;
+    object-fit: cover;
+    background-color: #e9e6da;
+    
+}
+
+/* Flechas oscuras (por defecto son blancas) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1) grayscale(100);
+}
+
+/* Puntitos debajo del carrusel, en verde */
+.carousel-indicators {
+    position: static;
+    margin: 1rem 0 0;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: var(--color-principal);
 }
