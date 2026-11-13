@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+
+html {
+scroll-behavior: smooth;
+}
+
+@theme {
+  /* Colores originales de Rueda Libre */
+--color-principal: #214b3b;
+--color-principal-oscuro: #17372c;
+--color-acento: #d9b978;
+--color-texto: #28342d;
+--color-fondo: #f7f4ec;
+--color-farol: #FFD166;
+
+  /* Colores de WhatsApp */
+--color-whatsapp: #25a244;
+--color-whatsapp-oscuro: #187c32;
+}
+ /* Tipografías */
+@theme{
+--font-titulos: "Montserrat", sans-serif;
+--font-texto: "Open Sans", sans-serif;
+}
