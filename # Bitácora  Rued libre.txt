@@ -1,0 +1,129 @@
+# Bitácora de desarrollo — Rueda Libre
+
+## Día 1 — Estructura inicial con HTML5
+
+**Objetivo:** Crear la estructura inicial de un sitio web para el alquiler de bicicletas en Medellín.
+
+### Actividades realizadas
+
+- Creación de las páginas `index.html`, `tarifas.html` y `reserve.html`.
+- Organización del contenido mediante etiquetas semánticas como `header`, `nav`, `main`, `section` y `footer`.
+- Implementación de enlaces para navegar entre las páginas.
+- Creación de tablas para mostrar tarifas de bicicletas y recorridos.
+- Desarrollo de un formulario de reserva con campos para los datos del usuario.
+- Incorporación de imágenes y descripciones de los servicios.
+
+### Aprendizaje
+
+Durante el primer día aprendí a organizar correctamente la estructura de una página web utilizando HTML5. También reforcé mis conocimientos sobre etiquetas semánticas, formularios, tablas y navegación entre páginas.
+
+## Día 2 — Diseño responsive y Tailwind CSS
+
+Se trabajó en la página Rueda Nocturna, utilizando Tailwind CSS para construir una interfaz adaptable a diferentes tamaños de pantalla.
+
+Se aplicaron clases de diseño, colores personalizados y componentes visuales.
+
+**Aprendizaje:** Comprendí cómo utilizar las clases de utilidad de Tailwind CSS para desarrollar interfaces modernas y responsive.
+
+## Día 3 — CSS y lanzamiento de Rueda Libre
+
+### MiniReto 9 — Identidad visual
+
+Se crearon variables CSS para definir colores, tipografías y espaciados. Se utilizaron las fuentes Montserrat y Open Sans, organizando los estilos en una hoja externa.
+
+### MiniReto 10 — Navegación y especificidad
+
+Se trabajó con la navegación de Bootstrap, los enlaces activos y los selectores CSS. También se revisaron los estados visuales de botones y formularios.
+
+### MiniReto 11 — Modelo de caja
+
+Se utilizaron márgenes, rellenos, bordes y unidades relativas para organizar tarjetas, tablas y formularios, aprovechando el sistema responsive de Bootstrap.
+
+### MiniReto 12 — Integración de componentes
+
+Se integraron el carrusel de bicicletas, las tarjetas de servicios, la etiqueta «Nuevo», el formulario de reserva y el enlace de WhatsApp.
+
+### Aprendizaje
+
+Fortalecí mis conocimientos sobre variables CSS, especificidad, modelo de caja y reutilización de componentes.
+
+## Conclusión general
+
+Durante los tres días de desarrollo de Rueda Libre aprendí a combinar HTML5, CSS3, Bootstrap y Tailwind CSS para construir una página web organizada y adaptable.
+
+Este proyecto me permitió mejorar mis habilidades en desarrollo frontend y comprender la importancia de mantener un código estructurado, reutilizable y fácil de mantener.
+
+# Bitácora — Día 2: Rueda Nocturna
+
+## MiniReto 8: Refactorización y comparación
+
+**Refactorización:** Se utilizaron las directivas `@layer components` y `@apply` para crear clases reutilizables en los botones de la página, reduciendo la repetición de utilidades en el HTML.
+
+**Optimización:** Se generó un archivo CSS minificado mediante Tailwind CLI para reducir el tamaño del archivo final.
+
+- CSS original: ___ bytes.
+- CSS minificado: ___ bytes.
+- Reducción: ___ %.
+- Bootstrap CSS + JS transferidos: ___ bytes.
+
+**Comparación:** Tailwind CSS permite crear interfaces personalizadas mediante clases de utilidad. Bootstrap ofrece componentes prediseñados que facilitan el desarrollo rápido.
+
+**Recomendación:** Para Rueda Nocturna, elegiría Tailwind CSS porque permite personalizar los colores, las tipografías, el diseño responsive y el modo oscuro utilizando las clases del proyecto.
+
+**Conclusión:** Aprendí a construir interfaces responsive, personalizar temas, implementar el modo oscuro y reutilizar estilos para mantener un código más organizado.
+
+# Bitácora de desarrollo — Rueda Libre
+
+**Proyecto:** Rueda Libre  
+**Actividad:** Día 3 — CSS y lanzamiento de la versión 1.0  
+**Tecnologías:** HTML5, CSS3, Bootstrap 5 y Tailwind CSS.
+
+## MiniReto 9 — Identidad visual
+
+Se trabajó en la identidad visual del proyecto utilizando variables CSS mediante `:root` y `var()`.
+
+Se definieron colores personalizados, tipografías Montserrat y Open Sans, y valores de espaciado en `rem`.
+
+También se creó una hoja de estilos externa para organizar la presentación del sitio y mantener una apariencia consistente.
+
+**Aprendizaje:** Comprendí cómo utilizar variables CSS para mantener un diseño organizado y reutilizable.
+
+## MiniReto 10 — Navegación y especificidad
+
+Se trabajó con el menú de navegación utilizando Bootstrap y clases CSS personalizadas.
+
+Se revisó la diferencia entre los selectores de ID y de clase, así como la importancia de la especificidad CSS.
+
+El proyecto utiliza estados visuales para los enlaces activos, botones y campos de formulario.
+
+**Aprendizaje:** Comprendí cómo funciona la especificidad CSS y cómo aprovechar los estilos de Bootstrap sin duplicar código innecesariamente.
+
+## MiniReto 11 — Modelo de caja
+
+Se utilizaron componentes de Bootstrap para organizar el contenido de manera responsive.
+
+Las tarjetas, tablas y formularios cuentan con márgenes, espaciados, bordes y esquinas redondeadas.
+
+También se trabajó con unidades relativas y clases de distribución para adaptar el contenido a diferentes pantallas.
+
+**Aprendizaje:** Comprendí la importancia del modelo de caja para organizar los elementos de una página web.
+
+## MiniReto 12 — Lanzamiento de Rueda Libre
+
+Se integraron las páginas principales del proyecto:
+
+- Inicio.
+- Tarifas.
+- Reservas.
+
+Se incorporaron un carrusel de bicicletas, tarjetas de servicios, tablas de precios, un formulario de reserva y enlaces de navegación.
+
+También se agregó una etiqueta «Nuevo» para destacar las bicicletas eléctricas y un enlace de contacto por WhatsApp.
+
+**Aprendizaje:** Aprendí a integrar diferentes componentes y estilos para construir un sitio web con una identidad visual consistente.
+
+## Conclusión
+
+Durante esta actividad fortalecí mis conocimientos en HTML, CSS y Bootstrap. Aprendí a organizar estilos, reutilizar componentes y mejorar la presentación de un sitio web.
+
+El proyecto Rueda Libre me permitió aplicar estos conocimientos en una página dedicada al alquiler de bicicletas y recorridos por Medellín.

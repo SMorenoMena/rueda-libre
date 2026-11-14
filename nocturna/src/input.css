@@ -23,3 +23,19 @@ scroll-behavior: smooth;
 --font-titulos: "Montserrat", sans-serif;
 --font-texto: "Open Sans", sans-serif;
 }
+
+@layer components {
+
+  .btn-principal {
+    @apply inline-block rounded-xl bg-principal px-6 py-3 text-center font-bold text-white transition-colors hover:bg-principal-oscuro;
+  }
+
+  .btn-farol {
+    @apply inline-block rounded-xl bg-farol px-6 py-3 text-center font-bold text-principal-oscuro transition-opacity hover:opacity-90;
+  }
+
+  .btn-ruta {
+    @apply mt-4 inline-block rounded-xl bg-principal px-5 py-3 text-center font-bold text-white transition-colors hover:bg-principal-oscuro dark:bg-farol dark:text-principal-oscuro dark:hover:opacity-90;
+  }
+
+}
